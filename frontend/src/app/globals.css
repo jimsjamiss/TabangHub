@@ -43,15 +43,4 @@ form{
 button{
   display: flex;
 }
-.logo{
-  display: flex;
-  height: 50px;
-  width: 50px;
-  margin-bottom: 20px;
-}
-.logo label{
-  padding-left: 10px;
-  align-self: center;
-  font-size: 30pt;
-}
 

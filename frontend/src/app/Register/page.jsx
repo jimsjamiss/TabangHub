@@ -4,7 +4,7 @@ export default function Register(){
 
 <form class="max-w-md mx-auto">
  <div class="relative z-0 w-full mb-3 group">
-  <label class="text-xl ">Registration</label> 
+  <label class="text-xl ">Create Account</label> 
  </div>
  <div class="relative z-0 w-full mb-5 group">
       <input type="text" name="floating_username" id="floating_username" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
@@ -39,7 +39,9 @@ export default function Register(){
     </div>
 
   </div>
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w- sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+  <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium 
+              rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 
+             dark:focus:ring-green-800 mx-auto">Submit</button>
 </form>
 
   );
