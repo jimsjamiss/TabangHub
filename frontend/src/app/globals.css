@@ -24,7 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));*/
-  background-color: rgb(54, 135, 68)
+  background-color: rgb(83, 163, 95);
   
 } 
 
@@ -43,4 +43,5 @@ form{
 button{
   display: flex;
 }
+
 
