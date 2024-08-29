@@ -36,31 +36,69 @@ export default function services(){
     </nav>
 
    
-    <div class="">
-<ul class="flex flex-row justify-between pl-2 pr-2">
-  <li>
-    <img src="/image1.jpg" height={500} width={500} class="shadow-2xl shadow-green-950 mt-10 rounded-lg"/>
-  </li>
-  <li>
-    <img src="/image2.jpg" height={500} width={500} class="shadow-2xl shadow-green-950 mt-10 rounded-lg"/>
-  </li>
-  <li>
-    <img src="/image3.jpg" height={500} width={500} class="shadow-2xl shadow-green-950  mt-10 rounded-lg"/>
-  </li>
-</ul>
+  <div class="">
+    <ul class="flex flex-row justify-evenly">
+      <li>
+        <div class="max-w-xs mt-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg" src="/image1.jpg" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white underline">Feeding Program</h5>
+            </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A feeding program provides meals to individuals in need, typically targeting vulnerable groups like children and the elderly, to combat hunger and malnutrition.</p>
+              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+             </a>
+          </div>
+       </div>
+      </li>
+  
+      <li>
+        <div class="max-w-xs mt-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+             <img class="rounded-t-lg" src="image2.jpg" alt="" />
+            </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white underline">Medical Checkup</h5>
+            </a>
+              <p class="mb-10 font-normal text-gray-700 dark:text-gray-400">A medical checkup is a routine examination conducted by a healthcare professional to assess an individual's overall health.</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+               Read more
+               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+           </a>
+         </div>
+        </div>
+      </li>
 
-<ul class="flex flex-row justify-between pl-2 pr-2 font-sans text-white text-xl">
-  <li>
-    <h1>Feeding Program</h1>
-  </li>
-  <li>
-    <h1>Medical Mission</h1>
-  </li>
-  <li>
-    <h1>First-Aid Seminars</h1>
-  </li>
-</ul>
-</div>
+      <li>
+          <div class="max-w-xs mt-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="rounded-t-lg" src="image3.jpg" alt="" />
+            </a>
+              <div class="p-5">
+                <a href="#">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white underline">First-Aid Seminar</h5>
+                </a>
+                <p class="mb-10 font-normal text-gray-700 dark:text-gray-400">These seminars aim to equip individuals with the knowledge and confidence to provide immediate assistance in critical situations.</p>
+                  <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                  </a>
+              </div>
+          </div>
+       </li>
+    </ul>
+  </div>
 </>
   );
 }
