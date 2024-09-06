@@ -16,7 +16,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import Image from 'next/image';
 
 
-const pages = ['Home', 'Services', 'Contact'];
+const pages = ['Home', 'Services', 'Volunteers','Contact'];
 const settings = ['Profile', 'Account', 'Logout'];
 
 function ResponsiveAppBar() {

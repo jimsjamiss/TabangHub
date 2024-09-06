@@ -20,6 +20,7 @@
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
     "@mui/styled-engine-sc": "^6.0.2",
+    "@toolpad/core": "^0.5.2",
     "flowbite": "^2.5.1",
     "next": "14.2.6",
     "react": "^18",
