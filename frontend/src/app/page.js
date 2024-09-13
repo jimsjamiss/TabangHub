@@ -2,9 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 
-
-
-
 export default function Home() {
   return (
    <> <div className= "body" >   
@@ -48,7 +45,7 @@ export default function Home() {
               </a>
             </button>
 
-            <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+            <div class="text-sm font-medium text-black-500 dark:text-black-300">
               Not registered? <a href="/registration" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
             </div>
         </form>

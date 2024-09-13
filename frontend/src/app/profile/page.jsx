@@ -9,7 +9,7 @@ export default function profile(){
     <>
       <Navbar></Navbar>
 
-      <Profile></Profile>
+      <Profile className=""></Profile>
       
     </>
   );
