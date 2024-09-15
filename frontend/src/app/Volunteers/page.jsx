@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Navbar from '../dashboard/Navbar/page'
+import Navbar from '../dashboard/components/Navbar/page'
 import Card1 from './components/card1';
 import Card2 from './components/card2';
 
