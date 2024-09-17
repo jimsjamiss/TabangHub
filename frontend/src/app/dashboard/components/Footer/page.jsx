@@ -51,10 +51,10 @@ const Footer = () => {
               Contact Us
             </Typography>
             <Typography variant="body2">
-              Email: <a href="mailto:info@example.com" style={{ color: '#fff' }}>info@example.com</a>
+              Email: <a href="mailto:tabanghub69@gmail.com" style={{ color: '#fff' }}>tabanghub69@gmail.com</a>
             </Typography>
             <Typography variant="body2">
-              Phone: +1 (234) 567-890
+              Phone: +63 (969) 420-6006
             </Typography>
           </Grid>
           
@@ -103,7 +103,7 @@ const Footer = () => {
         
         <Box textAlign="center" mt={4}>
           <Typography variant="body2">
-            &copy; {new Date().getFullYear()} Your Organization. All rights reserved.
+            &copy; {new Date().getFullYear()} TabangHub. All rights reserved.
           </Typography>
         </Box>
       </Container>

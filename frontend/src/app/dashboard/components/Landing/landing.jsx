@@ -1,38 +1,20 @@
 "use client";
 
 import Image from 'next/image';
-import { Container, Box, Typography, Button, Fade, Slide, Grow } from '@mui/material';
-import React, { useState,useEffect } from 'react';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
+import { Container, Box, Typography, Button, Fade, Slide, Grow, Card, CardContent, CardMedia, Grid } from '@mui/material';
+import React, { useState, useEffect } from 'react';
 
+export default function Landing() {
+  const [checked, setChecked] = useState(false);
 
-export default function Landing(){
+  useEffect(() => {
+    setChecked(true); // Triggers animation when the page loads
+  }, []);
 
-
-const [checked, setChecked] = useState(false);
-
-    useEffect(() => {
-      setChecked(true); // Triggers animation when the page loads
-    }, []);
-
-//carousel design
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  arrows: true,
-};    
-  
-return(
-  <>
-<div className="bg-white mt-10" style={{ minHeight: '50vh', padding: '2rem' }}>
-      <form class="max-w-md mx-auto mt-5">   
+  return (
+    <>
+       {/* Search bar */}
+       <form class="max-w-md mx-auto mt-5">   
           <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
           <div class="relative">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -44,10 +26,11 @@ return(
               <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-green-600 dark:hover:bg-green-900 dark:focus:ring-green-800">Search</button>
           </div>
       </form>
-      <Container maxWidth="sm">
-        {/* Section 1: Text with Fade Transition */}
+
+      {/* Welcome message */}
+      <Container maxWidth="sm" sx={{ my: 4 }}>
         <Fade in={checked} timeout={1000}>
-          <Box textAlign="center" mt={5}>
+          <Box textAlign="center">
             <Typography variant="h2" component="h1" gutterBottom>
               Welcome to TabangHub
             </Typography>
@@ -57,101 +40,121 @@ return(
           </Box>
         </Fade>
 
-        {/* Section 2: Text with Slide Transition */}
         <Slide direction="up" in={checked} timeout={1500}>
-          <Box textAlign="center" mt={3}>
+          <Box textAlign="center" sx={{ mt: 3 }}>
             <Typography variant="body1" color="textPrimary">
               With cutting-edge technology and expert support, we're here to help you grow.
             </Typography>
           </Box>
         </Slide>
 
-        {/* Section 3: Call to Action with Grow Transition */}
         <Grow in={checked} timeout={2000}>
-          <Box textAlign="center" mt={5}>
+          <Box textAlign="center" sx={{ mt: 5 }}>
             <Button variant="contained" color="primary" size="large">
               Get Started Today
             </Button>
           </Box>
         </Grow>
       </Container>
-    </div>
 
-    <div className='bg-green-700' style={{ minHeight: '50vh', padding: '2rem' }}>
-      <Container maxWidth="lg">
-        {/* Section Title with Fade Transition */}
-        <Fade in={checked} timeout={1000}>
-          <Box textAlign="center" mb={5}>
-            <Typography variant="h3" component="h2" style={{ color: '#fff' }} gutterBottom>
-              What We Offer
-            </Typography>
-            <Typography variant="subtitle1" style={{ color: '#ccc' }}>
-              Explore our services and solutions tailored to your needs
-            </Typography>
-          </Box>
-        </Fade>
+      {/* Services section */}
+      <div style={{ backgroundColor: '#004d40', padding: '2rem' }}>
+        <Container>
+          <Typography variant="h3" component="h2" color="white" textAlign="center" gutterBottom>
+            Our Services
+          </Typography>
+          <Grid container spacing={4}>
+            {/* Card 1 */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card sx={{ borderRadius: '16px', overflow: 'hidden', boxShadow: 3 }}>
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image="/image1.jpg"
+                  alt="Donations"
+                  sx={{ objectFit: 'cover' }}
+                />
+                <CardContent sx={{ background: 'linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)', color: 'white' }}>
+                  <Typography variant="h5" component="div">
+                    Donations
+                  </Typography>
+                  <Typography variant="body2" sx={{ mt: 1 }}>
+                    Help us support those in need with your generous donations.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
 
-        {/* Carousel */}
-        <Slider {...settings}>
-          {/* Slide 1 */}
-          <div>
-            <Box textAlign="center">
-            <Typography variant="h3" color="white" mt={2}>
-                Donations
-            </Typography>
-              <Image
-                src="/image1.jpg" // Make sure to replace with actual image paths
-                alt="Offer 1"
-                width={1500}
-                height={100}
-                style={{ borderRadius: '10px' }}
-              />             
+            {/* Card 2 */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card sx={{ borderRadius: '16px', overflow: 'hidden', boxShadow: 3 }}>
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image="/image2.jpg"
+                  alt="Medical Assistance"
+                  sx={{ objectFit: 'cover' }}
+                />
+                <CardContent sx={{ background: 'linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)', color: 'white' }}>
+                  <Typography variant="h5" component="div">
+                    Medical Assistance
+                  </Typography>
+                  <Typography variant="body2" sx={{ mt: 1 }}>
+                    Access essential medical help and resources whenever you need.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            {/* Card 3 */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card sx={{ borderRadius: '16px', overflow: 'hidden', boxShadow: 3 }}>
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image="/image3.jpg"
+                  alt="First-Aid Seminar"
+                  sx={{ objectFit: 'cover' }}
+                />
+                <CardContent sx={{ background: 'linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)', color: 'white' }}>
+                  <Typography variant="h5" component="div">
+                    First-Aid Seminar
+                  </Typography>
+                  <Typography variant="body2" sx={{ mt: 1 }}>
+                    Join our informative seminars to learn essential first-aid skills.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+
+          <Fade in={checked} timeout={2000}>
+            <Box textAlign="center" sx={{ mt: 5 }}>
+              <Button
+                variant="contained"
+                color="primary"
+                size="large"
+                sx={{
+                  px: 4,
+                  py: 2,
+                  borderRadius: '8px',
+                  fontWeight: 'bold',
+                  boxShadow: 3,
+                  transition: 'transform 0.3s, box-shadow 0.3s',
+                  '&:hover': {
+                    transform: 'scale(1.05)',
+                    boxShadow: 6,
+                  },
+                }}
+              >
+                <a href="/offers" style={{ color: 'white', textDecoration: 'none' }}>
+                  Learn More About Our Services
+                </a>
+              </Button>
             </Box>
-          </div>
-
-          {/* Slide 2 */}
-          <div>
-            <Box textAlign="center">
-            <Typography variant="h3" color="white" mt={2}>
-                Medical Assistance
-            </Typography>
-              <Image
-                src="/image2.jpg"
-                alt="Offer 2"
-                width={1500}
-                height={100}
-                style={{ borderRadius: '10px' }}
-              />
-            </Box>
-          </div>
-
-          {/* Slide 3 */}
-          <div>
-            <Box textAlign="center">
-            <Typography variant="h3" color="white" mt={2}>
-                First-Aid Seminar
-            </Typography>
-              <Image
-                src="/image3.jpg"
-                alt="Offer 3"
-                width={1500}
-                height={100}
-                style={{ borderRadius: '10px' }}
-              />
-            </Box>
-          </div>
-        </Slider>
-
-        {/* Call to Action Button with Animation */}
-        <Fade in={checked} timeout={2000}>
-          <Box textAlign="center" mt={5}>
-            <Button variant="contained" color="primary" size="large">
-              <a href='/offers'>Learn More About Our Services</a>
-            </Button>
-          </Box>
-        </Fade>
-      </Container>
-    </div>
+          </Fade>
+        </Container>
+      </div>
     </>
   );
 }

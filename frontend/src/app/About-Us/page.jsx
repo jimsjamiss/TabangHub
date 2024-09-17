@@ -61,7 +61,7 @@ export default function AboutUs() {
                     style={{ borderRadius: '50%', margin: '0 auto' }} // Center image
                   />
                   <Typography variant="h6" component="h3" mt={2}>
-                    Jane Doe
+                    Peter "D" Griffin
                   </Typography>
                   <Typography variant="body1" color="textSecondary">
                     Director of Programs
@@ -79,7 +79,7 @@ export default function AboutUs() {
                     style={{ borderRadius: '50%', margin: '0 auto' }} // Center image
                   />
                   <Typography variant="h6" component="h3" mt={2}>
-                    John Smith
+                    Glenn "Giggity" Quagmire
                   </Typography>
                   <Typography variant="body1" color="textSecondary">
                     Volunteer Coordinator
@@ -97,7 +97,7 @@ export default function AboutUs() {
                     style={{ borderRadius: '50%', margin: '0 auto' }} // Center image
                   />
                   <Typography variant="h6" component="h3" mt={2}>
-                    Emily Johnson
+                    Cleaveland "Nigga" Brown 
                   </Typography>
                   <Typography variant="body1" color="textSecondary">
                     Outreach Specialist
