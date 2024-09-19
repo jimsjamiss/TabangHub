@@ -186,26 +186,17 @@ function ResponsiveAppBar() {
               </Menu>
               <Tooltip title="Inbox">
                 <IconButton
+                  component= 'a'
+                  href= '/inbox'
                   sx={{ p: 0, color: 'white', ml: 2 }}
                   onClick={handleOpenInboxMenu}
                 >
                   <Badge badgeContent={3} color="error">
                     <MailOutlineIcon />
                   </Badge>
+                  
                 </IconButton>
               </Tooltip>
-              <Menu
-                anchorEl={anchorElInbox}
-                anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-                keepMounted
-                transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-                open={Boolean(anchorElInbox)}
-                onClose={handleCloseInboxMenu}
-              >
-                <MenuItem onClick={handleCloseInboxMenu}>🔔 New Message Notification</MenuItem>
-                <MenuItem onClick={handleCloseInboxMenu}>🔔 New Message Notification</MenuItem>
-                <MenuItem onClick={handleCloseInboxMenu}>🔔 New Message Notification</MenuItem>
-              </Menu>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, ml: 2 }}>
                   <Avatar alt="User Profile" src="/profilepic.jpg" />

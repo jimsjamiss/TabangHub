@@ -51,9 +51,9 @@ export default function RecipeReviewCard() {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
-         avatar={
-          <Avatar src="/profile 1.jpg">
-            
+        avatar={
+          <Avatar src="/malupiton.jpg">
+            L
           </Avatar>
         }
         action={
@@ -61,16 +61,15 @@ export default function RecipeReviewCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Jose Alfonso Primera"
-        subheader="Member: January 24, 2009"
+        title="Louis Mukangburat"
+        subheader="Member: September 14, 2016"
       />
       
       <CardContent>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        I am a dedicated volunteer with experience in organizing community events and supporting various causes. 
-        My achievements include leading successful 
-        fundraising efforts and mentoring new volunteers to create a positive impact.
-
+        As a passionate volunteer, I have contributed to various community projects and supported impactful initiatives. 
+        My accomplishments include coordinating events 
+        and helping to raise funds for local causes, while fostering teamwork and collaboration.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
