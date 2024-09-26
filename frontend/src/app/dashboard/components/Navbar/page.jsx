@@ -25,14 +25,13 @@ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 const pages = [
   <a href='../dashboard'>Home</a>, 
   <a href='/offers'>Services</a>, 
-  <a href='/volunteers'>Volunteers</a>,
-  <a href='/about-us'>Contact</a>
+  <a href='/volunteers'>Volunteers</a>
 ];
 
 const settings = [
   { label: "Profile", icon: <PersonRoundedIcon fontSize="small" />, link: "/profile" },
   { label: "History", icon: <HistoryRoundedIcon fontSize="small" />, link: "/userHistory" },
-  { label: "Logout", icon: <LogoutRoundedIcon fontSize="small" />, link: "/login" }
+  { label: "Logout", icon: <LogoutRoundedIcon fontSize="small" />, link: "/" }
 ];
 
 function ResponsiveAppBar() {

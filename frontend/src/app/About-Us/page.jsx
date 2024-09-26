@@ -118,8 +118,8 @@ export default function AboutUs() {
               Have questions or want to get involved? Reach out to us!
             </Typography>
             <Box mt={2}>
-              <Button variant="contained" color="primary" size="large" style={{ marginRight: '1rem' }}>
-                Contact Us
+              <Button component='a' href='/dashboard' variant="contained" color="primary" size="large" style={{ marginRight: '1rem' }}>
+                Back to Home
               </Button>
               <div>
                 <IconButton

@@ -58,6 +58,8 @@ const Services = () => {
               Donations in a volunteering project are essential for funding operations and supporting the project's mission. They can include monetary contributions, supplies, or services, directly enabling volunteers to make a greater impact.
             </Typography>
             <Button
+              component='a'
+              href='/donations'
               variant="contained"
               color="primary"
               sx={{ mt: 2 }}

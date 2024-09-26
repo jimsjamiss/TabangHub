@@ -35,15 +35,15 @@ export default function Landing() {
               Welcome to TabangHub
             </Typography>
             <Typography variant="h6" color="textSecondary">
-              Discover the best solutions for your business needs.
+              Empowering Change in the Philippines: Your Premier Volunteering Hub for Impactful Opportunities and Expert Support.
             </Typography>
           </Box>
         </Fade>
 
         <Slide direction="up" in={checked} timeout={1500}>
-          <Box textAlign="center" sx={{ mt: 3 }}>
+          <Box textAlign="center" sx={{ mt: 8 }}>
             <Typography variant="body1" color="textPrimary">
-              With cutting-edge technology and expert support, we're here to help you grow.
+              With innovative solutions and dedicated support, we're here to empower your journey of service and growth.
             </Typography>
           </Box>
         </Slide>
