@@ -64,7 +64,7 @@ const Services = () => {
               color="primary"
               sx={{ mt: 2 }}
             >
-              Read More
+              Donate now
             </Button>
           </CardContent>
         </Card>
@@ -97,6 +97,8 @@ const Services = () => {
               Medical assistance in a volunteering project ensures the health and safety of both volunteers and beneficiaries. This support can include providing first aid, medical supplies, and access to healthcare professionals, crucial for addressing any emergencies or health-related needs during the project.
             </Typography>
             <Button
+              component='a'
+              href='/med-volunteer'
               variant="contained"
               color="primary"
               sx={{ mt: 2 }}
@@ -134,6 +136,8 @@ const Services = () => {
               First-aid seminars in a volunteering project equip participants with essential skills to respond to emergencies effectively. These sessions ensure that volunteers are prepared to handle injuries or health issues, enhancing the overall safety and success of the project.
             </Typography>
             <Button
+              component='a'
+              href='/seminars'
               variant="contained"
               color="primary"
               sx={{ mt: 2 }}

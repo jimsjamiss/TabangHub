@@ -174,7 +174,7 @@ export default function Register() {
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <TextField
-                  label={role}
+                  label={role + " name"}
                   variant="outlined"
                   fullWidth
                   InputProps={{
@@ -275,24 +275,6 @@ export default function Register() {
                 />
               </Grid>
 
-              <Grid item xs={6}>
-                <TextField
-                  label={role + " Name"}
-                  variant="outlined"
-                  fullWidth
-                  InputLabelProps={{ style: { color: 'white' } }}
-                  sx={{
-                    input: { color: 'white' },
-                    '& .MuiOutlinedInput-root': {
-                      '& fieldset': { borderColor: 'white' },
-                      '&:hover fieldset': { borderColor: 'white' },
-                      '&.Mui-focused fieldset': { borderColor: 'white' },
-                    },
-                  }}
-                  required
-                />
-              </Grid>
-
               <Grid item xs={12}>
                 <TextField
                   label="Phone Number (09**-***-****)"
@@ -323,7 +305,7 @@ export default function Register() {
                   <Button
                     variant="contained"
                     component='a'
-                    href='/dashboard'
+                    href='/skillset'
                     color="success"
                     size="large"
                     onClick={handleSubmit}
