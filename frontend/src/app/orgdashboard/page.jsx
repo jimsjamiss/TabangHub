@@ -5,6 +5,7 @@ export default function Dashboard(){
     <>
       <Nav></Nav>
       <OrgDashboard></OrgDashboard>
+
     </>
   );
 }
