@@ -115,7 +115,7 @@ export default function Home() {
               </Typography>
             </Grid>
             <Grid item>
-              <Link href="/forgotpass" variant="body2" sx={{ color: 'white' }}>
+              <Link href="/users/forgotpass" variant="body2" sx={{ color: 'white' }}>
                 Forgot password?
               </Link>
             </Grid>
@@ -124,7 +124,7 @@ export default function Home() {
           {/* Login Button with Icon */}
           <Button
             component='a'
-            href='/dashboard'
+            href='/users/dashboard'
             type="submit"
             fullWidth
             variant="contained"
@@ -173,7 +173,7 @@ export default function Home() {
           {/* Registration Link */}
           <Typography variant="body2" sx={{ color: 'white', mt: 2 }}>
             Not registered?{' '}
-            <Link href="/registration" sx={{ color: '#1ED760' }}>
+            <Link href="/users/registration" sx={{ color: '#1ED760' }}>
               Create account
             </Link>
           </Typography>
